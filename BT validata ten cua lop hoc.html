@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT validata lop</title>
+</head>
+<body>
+<script>
+function validataclass(str) {
+    let regexp = /^[C,A,P]+[0-9]{4}[G,H,I,K,L,M]+$/
+    if (regexp.test(str)){
+        document.write("name of class ok" + "<br>")
+    }else{
+        document.write("name of class not ok " + "<br>")
+    }
+    
+}validataclass("C0318G")
+    validataclass("M0318G")
+    validataclass("P0323A")
+</script>
+</body>
+</html>
